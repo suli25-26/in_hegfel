@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" />
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MainController">
+   <children>
+      <Button layoutX="147.0" layoutY="191.0" mnemonicParsing="false" onAction="#onClickCalcButton" text="Számít" />
+      <Label layoutX="82.0" layoutY="157.0" text="Magasság" />
+      <TextField fx:id="radiusField" layoutX="145.0" layoutY="112.0" />
+      <Label layoutX="93.0" layoutY="116.0" text="Sugár" />
+      <Label layoutX="163.0" layoutY="50.0" text="Kör alapú kúp felszíne" textFill="#291aff">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="238.0" text="Felszín" />
+      <TextField fx:id="heightField" layoutX="146.0" layoutY="153.0" />
+      <TextField fx:id="surfaceField" layoutX="146.0" layoutY="234.0" />
+      <Label layoutX="149.0" layoutY="334.0" text="Erős István, IN, 2026-04-14" />
+   </children>
+</Pane>
